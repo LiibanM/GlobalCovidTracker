@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="neo-gU-yuO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Page View-->
+        <scene sceneID="CfC-1D-KuU">
+            <objects>
+                <viewController id="neo-gU-yuO" customClass="HomePageView" customModule="CovidGlobalTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sti-az-2Dc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planet-earth" translatesAutoresizingMaskIntoConstraints="NO" id="yBi-De-Q4z">
+                                <rect key="frame" x="143" y="400" width="128" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TBn-ix-esU">
+                                <rect key="frame" x="57" y="720" width="300" height="45"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Izf-As-Yua"/>
+                                    <constraint firstAttribute="height" constant="45" id="y9n-iy-Jho"/>
+                                </constraints>
+                                <state key="normal" title="Continue">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButtonPressed:" destination="neo-gU-yuO" eventType="touchUpInside" id="9tA-TY-CoM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Covid-19 Global Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42x-em-7Ux">
+                                <rect key="frame" x="60.5" y="110" width="293" height="35"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="29"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The COVID Tracker app is provided by UK Health and is your one-stop resource for viewing the levels of infection globally." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="VX4-Uj-NIj">
+                                <rect key="frame" x="61" y="211" width="292" height="140"/>
+                                <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EAi-Hh-Fkz" firstAttribute="bottom" secondItem="TBn-ix-esU" secondAttribute="bottom" constant="97" id="5GC-hG-tZb"/>
+                            <constraint firstItem="yBi-De-Q4z" firstAttribute="top" secondItem="VX4-Uj-NIj" secondAttribute="bottom" constant="49" id="7rt-Wn-aAa"/>
+                            <constraint firstItem="VX4-Uj-NIj" firstAttribute="leading" secondItem="EAi-Hh-Fkz" secondAttribute="leading" constant="61" id="7z4-7Z-dYd"/>
+                            <constraint firstItem="yBi-De-Q4z" firstAttribute="leading" secondItem="EAi-Hh-Fkz" secondAttribute="leading" constant="143" id="9v2-zb-xoL"/>
+                            <constraint firstItem="TBn-ix-esU" firstAttribute="top" secondItem="yBi-De-Q4z" secondAttribute="bottom" constant="192" id="DAQ-Ds-tFS"/>
+                            <constraint firstItem="TBn-ix-esU" firstAttribute="centerX" secondItem="sti-az-2Dc" secondAttribute="centerX" id="JTG-NH-dZh"/>
+                            <constraint firstItem="VX4-Uj-NIj" firstAttribute="top" secondItem="42x-em-7Ux" secondAttribute="bottom" constant="66" id="KRb-q9-OPo"/>
+                            <constraint firstItem="42x-em-7Ux" firstAttribute="leading" secondItem="EAi-Hh-Fkz" secondAttribute="leading" constant="60.5" id="LH5-Ga-x8v"/>
+                            <constraint firstItem="VX4-Uj-NIj" firstAttribute="centerX" secondItem="sti-az-2Dc" secondAttribute="centerX" id="MGd-SQ-n8q"/>
+                            <constraint firstItem="42x-em-7Ux" firstAttribute="top" secondItem="EAi-Hh-Fkz" secondAttribute="top" constant="66" id="Pap-ws-NHC"/>
+                            <constraint firstItem="EAi-Hh-Fkz" firstAttribute="trailing" secondItem="TBn-ix-esU" secondAttribute="trailing" constant="57" id="TQO-Ay-I0t"/>
+                            <constraint firstItem="TBn-ix-esU" firstAttribute="centerX" secondItem="yBi-De-Q4z" secondAttribute="centerX" id="TTg-Hc-0HR"/>
+                            <constraint firstItem="EAi-Hh-Fkz" firstAttribute="bottom" secondItem="TBn-ix-esU" secondAttribute="bottom" constant="97" id="VBq-2O-7uI"/>
+                            <constraint firstItem="TBn-ix-esU" firstAttribute="top" secondItem="yBi-De-Q4z" secondAttribute="bottom" constant="192" id="YYF-ae-tq4"/>
+                            <constraint firstItem="TBn-ix-esU" firstAttribute="leading" secondItem="EAi-Hh-Fkz" secondAttribute="leading" constant="57" id="d42-rM-UcR"/>
+                            <constraint firstItem="42x-em-7Ux" firstAttribute="centerX" secondItem="sti-az-2Dc" secondAttribute="centerX" id="ef0-0l-bn0"/>
+                            <constraint firstItem="EAi-Hh-Fkz" firstAttribute="trailing" secondItem="42x-em-7Ux" secondAttribute="trailing" constant="60.5" id="frY-ug-TkL"/>
+                            <constraint firstItem="yBi-De-Q4z" firstAttribute="top" secondItem="VX4-Uj-NIj" secondAttribute="bottom" constant="49" id="hfW-Vs-Vxb"/>
+                            <constraint firstItem="TBn-ix-esU" firstAttribute="centerX" secondItem="sti-az-2Dc" secondAttribute="centerX" id="i6i-JQ-RMe"/>
+                            <constraint firstItem="yBi-De-Q4z" firstAttribute="centerX" secondItem="sti-az-2Dc" secondAttribute="centerX" id="l2K-yW-6hW"/>
+                            <constraint firstItem="VX4-Uj-NIj" firstAttribute="top" secondItem="42x-em-7Ux" secondAttribute="bottom" constant="66" id="usU-65-pkF"/>
+                            <constraint firstItem="EAi-Hh-Fkz" firstAttribute="trailing" secondItem="yBi-De-Q4z" secondAttribute="trailing" constant="143" id="vHc-De-ksh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EAi-Hh-Fkz"/>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="TBn-ix-esU" id="E33-4F-8nb"/>
+                        <outlet property="worldImage" destination="yBi-De-Q4z" id="fyQ-sM-MBO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2tD-B5-gZn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-91.304347826086968" y="-71.651785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="planet-earth" width="128" height="128"/>
+    </resources>
+</document>

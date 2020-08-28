@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SSI-vD-kKc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Country List-->
+        <scene sceneID="r1B-Ad-Pop">
+            <objects>
+                <tableViewController storyboardIdentifier="ShowAllCountries" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SSI-vD-kKc" customClass="ShowAllCountriesTableViewController" customModule="CovidGlobalTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="0mt-Ps-xZe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="Kfb-Dw-6Tt">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="124" id="PZA-fi-TUj" customClass="ShowAllCountriesTableViewCell" customModule="CovidGlobalTracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="124"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PZA-fi-TUj" id="fIn-IY-j9o">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="124"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9FH-Zi-S0G">
+                                            <rect key="frame" x="16" y="4" width="347" height="32"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gyi-TO-Qjz">
+                                            <rect key="frame" x="20" y="44" width="343" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOz-li-vbp">
+                                            <rect key="frame" x="20" y="97" width="343" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hA8-oo-g38">
+                                            <rect key="frame" x="20" y="72" width="343" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Gyi-TO-Qjz" firstAttribute="top" secondItem="9FH-Zi-S0G" secondAttribute="bottom" constant="8" id="11Q-Tb-WVl"/>
+                                        <constraint firstItem="uOz-li-vbp" firstAttribute="top" secondItem="hA8-oo-g38" secondAttribute="bottom" constant="4" id="2go-nC-HmR"/>
+                                        <constraint firstAttribute="bottom" secondItem="uOz-li-vbp" secondAttribute="bottom" constant="6" id="3SL-oo-AC9"/>
+                                        <constraint firstItem="Gyi-TO-Qjz" firstAttribute="leading" secondItem="fIn-IY-j9o" secondAttribute="leadingMargin" id="BaZ-8l-ZxY"/>
+                                        <constraint firstItem="uOz-li-vbp" firstAttribute="top" secondItem="hA8-oo-g38" secondAttribute="bottom" constant="4" id="FsS-HR-8jh"/>
+                                        <constraint firstAttribute="trailing" secondItem="9FH-Zi-S0G" secondAttribute="trailing" constant="51" id="Gkm-GU-1KG"/>
+                                        <constraint firstItem="9FH-Zi-S0G" firstAttribute="leading" secondItem="fIn-IY-j9o" secondAttribute="leading" constant="16" id="K3y-vf-ZZs"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Gyi-TO-Qjz" secondAttribute="trailing" constant="31" id="LIp-w5-3GS"/>
+                                        <constraint firstItem="hA8-oo-g38" firstAttribute="top" secondItem="Gyi-TO-Qjz" secondAttribute="bottom" constant="7" id="Lwi-rQ-Rvc"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="hA8-oo-g38" secondAttribute="trailing" constant="31" id="Nmf-np-z3W"/>
+                                        <constraint firstAttribute="trailing" secondItem="uOz-li-vbp" secondAttribute="trailing" constant="51" id="jCd-BS-fRv"/>
+                                        <constraint firstItem="hA8-oo-g38" firstAttribute="top" secondItem="Gyi-TO-Qjz" secondAttribute="bottom" constant="7" id="lBB-0v-wIc"/>
+                                        <constraint firstItem="hA8-oo-g38" firstAttribute="leading" secondItem="fIn-IY-j9o" secondAttribute="leadingMargin" id="pdf-k2-Jtj"/>
+                                        <constraint firstItem="9FH-Zi-S0G" firstAttribute="top" secondItem="fIn-IY-j9o" secondAttribute="top" constant="4" id="tT9-hD-ehf"/>
+                                        <constraint firstItem="Gyi-TO-Qjz" firstAttribute="top" secondItem="9FH-Zi-S0G" secondAttribute="bottom" constant="8" id="tod-b4-SBO"/>
+                                        <constraint firstItem="uOz-li-vbp" firstAttribute="leading" secondItem="fIn-IY-j9o" secondAttribute="leading" constant="20" id="uft-ds-GUh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" staticText="YES"/>
+                                </accessibility>
+                                <connections>
+                                    <outlet property="countryName" destination="9FH-Zi-S0G" id="sGA-Nu-Cpc"/>
+                                    <outlet property="newConfirmed" destination="Gyi-TO-Qjz" id="0ep-kf-ZUr"/>
+                                    <outlet property="totalConfirmed" destination="hA8-oo-g38" id="HV5-h1-eTN"/>
+                                    <outlet property="totalDeaths" destination="uOz-li-vbp" id="UY1-vy-ge9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SSI-vD-kKc" id="n5w-z1-U82"/>
+                            <outlet property="delegate" destination="SSI-vD-kKc" id="Iec-0l-pox"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Country List" image="line.horizontal.3.decrease.circle" catalog="system" id="UHj-KC-vXR"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Kfb-Dw-6Tt" id="XRQ-T8-h5K"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ITH-yQ-NhM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-607.24637681159425" y="-1132.3660714285713"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="line.horizontal.3.decrease.circle" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

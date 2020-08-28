@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GlobalSummary-->
+        <scene sceneID="9uv-Zp-uYE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GlobalSummary" id="WhX-gR-SKz" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="YCM-Vu-oQQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuI-2E-DWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-840" y="498"/>
+        </scene>
+        <!--ShowAllCountries-->
+        <scene sceneID="YY4-V0-QgG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ShowAllCountries" id="G9X-dq-Z6U" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="hQG-bv-SOx"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qtA-mq-3Wg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="25" y="498"/>
+        </scene>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="kyv-2k-HKT">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yL8-vx-cWU" customClass="MainTabBarViewController" customModule="CovidGlobalTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wH2-k6-1NT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="WhX-gR-SKz" kind="relationship" relationship="viewControllers" id="IWE-fj-2NJ"/>
+                        <segue destination="G9X-dq-Z6U" kind="relationship" relationship="viewControllers" id="0c0-q1-AM1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDm-iR-qFY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-332" y="87"/>
+        </scene>
+    </scenes>
+</document>
